@@ -1,0 +1,15 @@
+{
+  "prettier.eslintIntegration": true,
+  "files.exclude": {
+    ".git": true,
+    "**/dist": true,
+    "yarn.lock": true
+  },
+	"tslint.enable": true,
+  "html.format.wrapLineLength": 100,
+  "html.format.endWithNewline": true,
+  "files.trimTrailingWhitespace": true,
+  "editor.trimAutoWhitespace": true,
+  "tslint.autoFixOnSave": true,
+  "editor.rulers": [80]
+}
