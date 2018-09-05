@@ -8,8 +8,11 @@
       "root": "src",
       "outDir": "dist",
       "assets": [
-        "assets",
-        "favicon.ico"
+        "assets/css",
+        "assets/fonts",
+        "assets/images",
+        "favicon.ico",
+        "manifest.json"
       ],
       "index": "index.html",
       "main": "main.ts",
@@ -19,6 +22,8 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
+        "../node_modules/flexboxgrid/dist/flexboxgrid.min.css",
+        "../node_modules/normalize.css/normalize.css",
         "styles.scss"
       ],
       "scripts": [],
