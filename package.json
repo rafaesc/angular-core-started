@@ -70,6 +70,9 @@
     "typescript": "~2.5.3"
   },
   "lint-staged": {
+    "*": [
+      "npm run test"
+    ],
     "*.ts": [
       "npm run lint:fix",
       "git add"
