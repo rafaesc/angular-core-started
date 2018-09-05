@@ -1,5 +1,11 @@
 # AngularCore Started
 
+<div class="badge-npmdownloads">
+  <a href="https://travis-ci.org/rafaesc/angular-core-started">
+    <img src="https://travis-ci.org/rafaesc/angular-core-started.svg" alt="downloads">
+  </a>
+</div>
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.4.
 
 ## Development server
