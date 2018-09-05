@@ -4,9 +4,9 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { StoreModule } from '@ngrx/store';
 import { EffectsModule } from '@ngrx/effects';
 import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
-import { HttpModule } from '@angular/http';
 import { SharedModule } from '../../@shared/shared.module';
 import { TokenInterceptorService } from '../../@shared/services/token-interceptor.service';
+import { CatchInterceptorService } from '../../@shared/services/catch-interceptor.service';
 
 import { ListComponent } from './list/list.component';
 import { CreateComponent } from './create/create.component';
@@ -32,6 +32,11 @@ import { ThoughtsService } from './thoughts.service';
     {
       provide: HTTP_INTERCEPTORS,
       useClass: TokenInterceptorService,
+      multi: true
+    },
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: CatchInterceptorService,
       multi: true
     },
     ThoughtsService]

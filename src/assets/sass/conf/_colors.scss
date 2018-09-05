@@ -1,0 +1,46 @@
+// color scheme
+$primary: #193cff !default;
+$secondary: #33dcfa !default;
+$info: #40daf1 !default;
+$success: #8bd22f !default;
+$warning: #e7ba08 !default;
+$danger: #ff0000 !default;
+$gray: #949597;
+$gray-light: #e8e8e8;
+$dark-light: #c1c1c1;
+$dark-strong: #646464;
+
+$primary-light: tint($primary, 30%);
+$secondary-light: tint($secondary, 30%);
+$info-light: tint($info, 30%);
+$success-light: tint($success, 30%);
+$warning-light: tint($warning, 30%);
+$danger-light: tint($danger, 30%);
+
+$primary-dark: shade($primary, 15%);
+$secondary-dark: shade($secondary, 15%);
+$info-dark: shade($info, 15%);
+$success-dark: shade($success, 15%);
+$warning-dark: shade($warning, 15%);
+$danger-dark: shade($danger, 15%);
+$gray-dark: shade($gray, 15%);
+$gray-light-shade: shade($gray-light, 15%);
+
+$primary-bg: tint($primary, 20%);
+$secondary-bg: tint($secondary, 20%);
+$info-bg: tint($info, 20%);
+$success-bg: tint($success, 20%);
+$warning-bg: tint($warning, 20%);
+$danger-bg: tint($danger, 20%);
+
+// link colors
+$color-link: #2872dd;
+$active-link: #285eb8;
+$hover-link: darken($active-link, 20%);
+
+$color-bg: white;
+
+$facebook-color: #3b5998;
+$twitter-color: #55acee;
+$google-color: #dd4b39;
+$linkedin-color: #0177b5;

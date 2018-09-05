@@ -11,5 +11,8 @@
   "files.trimTrailingWhitespace": true,
   "editor.trimAutoWhitespace": true,
   "tslint.autoFixOnSave": true,
-  "editor.rulers": [80]
+  "editor.rulers": [
+    80
+  ],
+  "typescript.tsdk": "node_modules\\typescript\\lib"
 }

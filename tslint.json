@@ -44,6 +44,8 @@
         ]
       }
     ],
+    "no-unused-variable": true,
+    "no-duplicate-imports": true,
     "no-arg": true,
     "no-bitwise": true,
     "no-console": [

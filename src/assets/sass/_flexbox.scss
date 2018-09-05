@@ -1,0 +1,63 @@
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.space-around {
+  justify-content: space-around;
+}
+
+.flex-middle-center {
+  display: flex;
+  align-items: center;
+}
+
+.flex-start {
+  display: flex;
+  align-items: flex-start;
+}
+
+.flex-end {
+  display: flex;
+  align-items: flex-end;
+}
+
+.grid {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  &-col-full {
+    flex: 1;
+  }
+  &-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  @media screen and (max-width: $resSidebarMobile) {
+    flex-direction: column;
+  }
+  &-col {
+    padding-right: 15px;
+    padding-left: 15px;
+    @media screen and (max-width: $resSidebarMobile) {
+      padding-right: 0;
+      padding-left: 0;
+    }
+  }
+}
+
+.flex-grow {
+  flex: 1;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}

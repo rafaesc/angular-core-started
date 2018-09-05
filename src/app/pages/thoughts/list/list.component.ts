@@ -3,7 +3,6 @@ import { Store } from '@ngrx/store';
 import { Thought } from '../@models/thought.model';
 import * as store from '../@store';
 import * as thoughtsActions from '../@store/thoughts.action';
-import * as UserActions from '../../../@shared/store/user.action';
 
 @Component({
   selector: 'app-list',

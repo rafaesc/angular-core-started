@@ -1,0 +1,34 @@
+@function tint($color, $percentage) {
+  @return mix(white, $color, $percentage);
+}
+
+@function rem($percentage) {
+  @return 14 * $percentage + px;
+}
+
+@function shade($color, $percentage) {
+  @return mix(black, $color, $percentage);
+}
+
+@mixin bg-nr($relativeUrl) {
+  background: url($images-root + $relativeUrl) no-repeat 0 0;
+}
+@mixin bg($relativeUrl) {
+  background: url($images-root + $relativeUrl);
+}
+
+@mixin bg-image($relativeUrl) {
+  background-image: url($assets-root + $images-root + $relativeUrl);
+}
+
+@mixin bg-translucent-dark($opacity) {
+  background: rgba(0, 0, 0, $opacity);
+}
+
+@mixin gradient($color-1, $color-2, $color-3) {
+  background: $color-2; /* Old browsers */
+  background: -moz-radial-gradient(bottom, ellipse cover,  $color-1 0%, $color-2 45%, $color-3 100%); /* FF3.6-15 */
+  background: -webkit-radial-gradient(bottom, ellipse cover,  $color-1 0%,$color-2 45%,$color-3 100%); /* Chrome10-25,Safari5.1-6 */
+  background: radial-gradient(ellipse at bottom,  $color-1 0%,$color-2 45%,$color-3 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="$color-1", endColorstr="$color-3",GradientType=1); /* IE6-9 fallback on horizontal gradient */
+}

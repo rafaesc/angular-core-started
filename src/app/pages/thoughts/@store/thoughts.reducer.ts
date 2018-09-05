@@ -3,14 +3,14 @@ import * as actions from './thoughts.action';
 
 export interface State {
   loading: boolean;
-  failed: boolean;
+  failed: string;
   data: Array<Thought>;
 }
 
 const INITIAL_STATE: State = {
   loading: false,
-  failed: false,
-  data: []
+  failed: null,
+  data: null
 };
 
 export function reducer(state = INITIAL_STATE, action: actions.Actions): State {
@@ -28,7 +28,7 @@ export function reducer(state = INITIAL_STATE, action: actions.Actions): State {
     case actions.ActionTypes.LOAD_SUCCESS: {
       return Object.assign({}, state, {
         loading: false,
-        failed: false,
+        failed: null,
         data: action.payload
       });
     }
@@ -36,8 +36,8 @@ export function reducer(state = INITIAL_STATE, action: actions.Actions): State {
     case actions.ActionTypes.LOAD_FAIL: {
       return Object.assign({}, state, {
         loading: false,
-        failed: true,
-        data: []
+        failed: action.payload,
+        data: null
       });
     }
 

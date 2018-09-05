@@ -1,17 +1,17 @@
 import { TestBed, inject } from '@angular/core/testing';
 import { StoreModule } from '@ngrx/store';
 
-import { TokenInterceptorService } from './token-interceptor.service';
+import { CatchInterceptorService } from './catch-interceptor.service';
 
-describe('TokenInterceptorService', () => {
+describe('CatchInterceptorService', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
       imports: [StoreModule.forRoot({})],
-      providers: [TokenInterceptorService]
+      providers: [CatchInterceptorService]
     });
   });
 
-  it('should be created', inject([TokenInterceptorService], (service: TokenInterceptorService) => {
+  it('should be created', inject([CatchInterceptorService], (service: CatchInterceptorService) => {
     expect(service).toBeTruthy();
   }));
 });

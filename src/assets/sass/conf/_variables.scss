@@ -1,0 +1,44 @@
+$font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+$font-bold: "Segoe UI", Roboto, "Helvetica Neue",
+  Arial, sans-serif;
+$font-extrabold: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
+$resXXXL: 1650px;
+$resXXL-2: 1400px;
+$resXXL: 1250px;
+$resXL: 1150px;
+$resL: 991px;
+$resM: 767px;
+$resS: 660px;
+$resXS: 500px;
+$resXXS: 435px;
+$resMin: 320px;
+
+$resHeightM: 820px;
+$resHeightS: 600px;
+$resHeightXS: 575px;
+
+$top-height: 66px;
+$sidebar-width: 180px;
+
+$small-card-height: 114px;
+$xsmall-card-height: 187px;
+$medium-card-height: 400px;
+$extra-medium-card-height: 550px;
+$large-card-height: 974px;
+
+$default-animation-duration: 0.2s;
+$default-animation-style: ease-out;
+
+$assets-root: "/assets";
+$images-root: "/images/";
+$fonts-root: "/fonts/";
+$font-thin: 100;
+$font-light: 300;
+$font-normal: 400;
+$font-bolder: 700;
+$font-ultraBold: 900;
+
+$resSidebarTablet: $resXL;
+$resSidebarMobile: $resM;
+$resAuthCollapsed: $resL;
