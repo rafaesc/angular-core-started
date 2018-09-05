@@ -1,16 +1,21 @@
+sudo: required
+addons:
+  chrome: stable
+
 language: node_js
 node_js:
-  - 9
-  - 8
+  - "8"
 install:
   # Use npm 5.7.x since it has introduced `npm ci`
   - if [[ `npm -v` != 5.7* ]]; then npm install -g npm@'>=5.7.1'; fi
   - npm ci
 script:
-  - npm run test:core
+  - npm run test
 branches:
   except:
     - /^v\d+\.\d+\.\d+$/
+before_script:
+  - npm install -g @angular/cli
 stages:
   - lint
   - test
@@ -23,4 +28,5 @@ jobs:
 
     - stage: integration
       script:
-        - npm run test:core
+        - ng build --prod --aot
+        - ng test
