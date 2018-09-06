@@ -13,6 +13,7 @@
     "lint:ci": "npm run lint && npm run lint:styles",
     "e2e": "ng e2e",
     "test:core": "ng test --code-coverage --watch true",
+    "postinstall": "npm run build",
     "precommit": "lint-staged",
     "commit": "git-cz",
     "mockup": "node data/server.js"
